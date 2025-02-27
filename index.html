@@ -231,7 +231,25 @@
             background: #ccc;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 660px) {
+            .container {
+                flex-direction: column; /* Change to column layout */
+            }
+
+            .right-side {
+                order: 2; /* Move to first */
+                width: 100%;
+            }
+
+            .product-grid {
+                order: 1; /* Move to second */
+                width: 100%;
+            }
+
+            .left-side {
+                order: 3; /* Move to third */
+                width: 100%;
+            }
             .topnav .search-container {
                 float: none;
             }
